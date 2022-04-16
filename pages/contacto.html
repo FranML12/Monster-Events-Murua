@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Icono de la pagina -->
+    <link rel="icon" href="../assets/images/MonsterEventsIcon.ico">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/MonsterEventsIcon.ico" width="40" height="40" alt="logo">
+            </a>
+        </div>
+        <div class="title">
+            <h1>Monster events</h1>
+        </div>
+        <label for="menu" class="header__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__menu">
+            <label for="menu" class="header__closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul>
+                <li><a href="informacion.html">Informacion</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="galeria.html">Nuestro salón</a></li>
+                <li><a href="contacto.html">Contactanos!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <img src="../assets/images/Contactanos.png" alt="Contactanos!">
+        <h3>Completa este formulario para que uno de nuestros agentes se ponga en contacto con vos.</h3>
+        <!-- Formulario -->
+        <form action="/ruta-destino" class="formulario" method="get" enctype="">
+            <fieldset class="formulario1">
+                <legend class="formTitle">Formulario de contacto</legend>
+                <input type="text" name="userName" id="Nombre" placeholder="Nombre" required>
+                <input type="tel" name="userTel" placeholder="Telefono" required>
+                <input type="email" name="userEmail" placeholder="Ingresa tu email" required>
+                <select name="Evento">
+                    <option value="" hidden selected>Evento a festejar</option>
+                    <option value="boda">Boda</option>
+                    <option value="15años">15 años</option>
+                    <option value="egresados">Egresados</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Mas información en:</p>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="informacion.html">Informacion</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="galeria.html">Nuestro salón</a></li>
+            <li><a href="contacto.html">Contactanos!</a></li>
+        </ul>
+        <div class="ImgTop">
+            <a href="#top">
+                <img src="../assets/images/Top.jpg" alt="Back to top">
+            </a>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
