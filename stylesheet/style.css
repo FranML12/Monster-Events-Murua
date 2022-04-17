@@ -208,6 +208,7 @@ footer div.ImgTop img {
   position: fixed;
   bottom: 30px; 
   right: 30px;
+  animation:  smooth;
 }
 
 /* HOME */
@@ -258,6 +259,27 @@ section.container-1 article.item {
     width: 100%;
 }
 
+#ArticleItemB {
+  background-image: url(../assets/images/Boda.jpg);
+  background-size: cover;
+}
+#ArticleItem15 {
+  background-image: url(../assets/images/15años.jpg);
+  background-size: cover;
+}
+#ArticleItemE {
+  background-image: url(../assets/images/Egresados.jpg);
+  background-size: cover;
+}
+
+.container-1 .item h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(235, 235, 235);
+    position: center;
+    transition: all 0.5s ease-in;
+}
+
 body {
     background-color: rgb(231, 231, 231);
 }
@@ -274,6 +296,20 @@ body {
 .media .IndexMainContent {
   flex: 1;
   padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .media {
+    display: flex;
+    align-items: flex-start;
+  }
+  .media.flipped {
+    flex-direction: row-reverse;
+  }
+  .media .IndexMainContent {
+    flex: 1;
+    padding: 10px;
+  }
 }
 
 /* End Index Main */
@@ -384,6 +420,17 @@ body {
 
   /* END GALERIA */
 
+  /* INFORMACIÓN */
+
+  @media screen and (max-width: 768px) {
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  /* END INFORMACIÓN */
+
   /* CONTACTO */
 
   .formulario {
@@ -427,6 +474,13 @@ body {
   padding: 10px;
 }
 
+#AnimatedTitle h2 {
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+  animation-name: left-in;
+  animation-duration: 1s;
+}
 
 #boda {
   grid-area: TBoda;
@@ -442,15 +496,23 @@ body {
 
 .bodaImg {
   grid-area: boda;
-
+  transition: all 0.5s ease-in;
+  animation-name: shake;
+  animation-duration: 1s;
 }
 
 .añosImg {
   grid-area: años;
+  transition: all 0.5s ease-in;
+  animation-name: shake;
+  animation-duration: 1s;
 }
 
 .egresadosImg {
   grid-area: egresados;
+  transition: all 0.5s ease-in;
+  animation-name: shake;
+  animation-duration: 1s;
 }
 
 @media screen and (max-width: 768px) {
