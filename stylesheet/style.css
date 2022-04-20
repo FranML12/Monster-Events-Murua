@@ -6,8 +6,9 @@
 }
 
 a {
-    color: gray;
+    color: gray !important;
     font-weight: bold;
+    text-decoration: none !important;
     text-decoration: none;
 }
 
@@ -20,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(39, 39, 39);
+    background-color: white;
 }
 
 header .title {
@@ -145,10 +146,6 @@ header .title {
 
 /* BODY */
 
-body main {
-  background-color: rgb(56, 56, 56);
-}
-
 #SalonIndex {
   display: flex;
   display: inline-block;
@@ -165,11 +162,11 @@ footer {
   flex-direction: column;
   box-shadow: 0 0 15px rgb(163, 163, 163);
   padding: 1rem;
-  background-color: rgb(39, 39, 39);
+  background-color: white;
 }
 
-footer p{
-  color: white;
+footer h5{
+  color: black;
 }
 
 footer ul {
@@ -190,7 +187,7 @@ footer ul li {
 }
 
 footer ul li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(163, 163, 163);
 }
 
 footer div a{
@@ -216,18 +213,18 @@ footer div.ImgTop img {
 h2 {
   display: flex;
   justify-content: center;
-  color: white;
+  color: black;
 }
 
 h3, h4, h5, h6 {
     margin: 1rem 0.5rem;
     display: flex;
-    color: white;
+    color: Black;
 }
 
 main p {
     margin: 0.5rem 0.5rem;
-    color: rgb(189, 189, 189);
+    color: black;
 }
 
 section.container-1 {
