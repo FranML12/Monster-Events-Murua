@@ -386,23 +386,31 @@ body {
   
   .img1 {
     grid-area: img1;
+    width: 100%;
+    height: auto;
   }
   
   .img2 {
     grid-area: img2;
+    width: 100%;
+    height: auto;
   }
   
   .img3 {
     grid-area: img3;
+    width: 100%;
+    height: auto;
   }
   
   .img4 {
     grid-area: img4;
+    width: 100%;
+    height: auto;
   }
   
   .galleryTitle:hover {
     widows: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: black;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
   }
@@ -452,6 +460,13 @@ body {
     margin: 5px;
     width: 224px;
     height: 230px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #ContactanosImg {
+      width: 100%;
+      height: auto;
+    }
   }
 
 /* END CONTACTO */
@@ -518,12 +533,8 @@ body {
     grid-template-rows: repeat(6, 700px);
     grid-template-areas: "Tboda"
                          "boda"
-
-
                          "TAños"
                          "años"
-
-
                          "TEgresados" 
                          "egresados";
     justify-content: center;
