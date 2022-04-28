@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: gray !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    text-decoration: none;
+}
+
+header {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    height: 80px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        color: white;
+        padding-right: 10px ;
+    }
+
+    /* NAV */
+
+    .header__burgerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2rem;
+        background-color: rgb(39, 39, 39);
+        border: none;
+        color: grey;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: box-shadow 0.5s ease-in;
+
+        :hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    input#menu {
+        display: none;
+
+        :checked ~ .header__menu {
+            display: block;
+        }
+    }
+
+    .header__menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        background-color: rgb(39, 39, 39);
+
+        .header__closeMenu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            li {
+                text-transform: uppercase;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 0.5rem;
+
+                :hover {
+                    background-color: rgb(68, 68, 68);
+                }
+            }
+        }
+    }
+
+    /* Media queries */
+
+    @media screen and (min-width: 768px) {
+        header {
+            .header__burgerMenu {
+                display: none;
+            }
+
+            .header__menu {
+                display: initial;
+                position: inherit;
+
+                .header__closeMenu {
+                    display: none;
+                }
+
+                ul {
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+            }
+
+            #header__menu--ItemGallery {
+                position: relative;
+
+                :hover > ul {
+                    display: flex;
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    padding: 0.5rem;
+                    height: 7rem;
+                    background-color: rgb(250, 250, 250);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* END HEADER */
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgb(163, 163, 163);
+    padding: 1rem;
+    background-color: white;
+
+     h5 {
+        color: black;
+     }
+
+     ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        flex-direction: column;
+
+        li {
+            border-radius: 7px;
+            box-shadow: 0 0 15px rgb(163, 163, 163);
+            padding:  8px;  
+            background-color: rgb(223, 223, 223);
+            margin: 3px;
+            width: 150px;
+
+        }
+        
+        :hover {
+            background-color: rgb(163, 163, 163)
+        }
+     }
+     div {
+         a {
+            display: block;
+            display: flex;
+            justify-content: flex-end; 
+         }
+    }
+    
+    .ImgTop {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        border-radius: 150px;
+        position: fixed;
+        bottom: 50px; 
+        right: 50px;
+        animation:  smooth;
+    }
+}
+
+/* HOME */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+h3, h4, h5, h6 {
+    margin: 1rem 0.5rem;
+    display: flex;
+    color: Black;
+}
+
+main {
+    p {
+        margin: 0.5rem 0.5rem;
+        color: black;
+    } 
+}
+    
+        .container-1 {
+            display: flex;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            #ArticleItemB {
+                background-image: url(../assets/images/Boda.jpg);
+                background-size: cover;
+            }
+            #ArticleItem15 {
+                background-image: url(../assets/images/15años.jpg);
+                background-size: cover;
+            }
+            #ArticleItemE {
+                background-image: url(../assets/images/Egresados.jpg);
+                background-size: cover;
+            }
+
+            
+                .item {
+                    width: 100%;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+                    height: 200px;
+                    width: 300px;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 1s ease-in;
+
+                    :hover {
+                        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+                        color: white;
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                        transform: scale(1.1);
+                  
+                    h4 {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        color: white;
+                        position: center;
+                        transition: all 0.5s ease-in;
+                    }
+                }
+            }
+
+        } 
+
+      
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+/* Index Main */
+
+.media {
+    display: flex;
+    align-items: flex-start;
+
+    .flipped {
+        flex-direction: row-reverse;
+    }
+
+    .IndexMainContent {
+        flex: 1;
+        padding: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .media {
+            display: flex;
+            align-items: flex-start;
+
+            .flipped {
+                flex-direction: row-reverse; 
+            }
+
+            .IndexMainContent {
+                flex: 1;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+/* End Idex Main */
+
+/* END HOME */
+
+/* GALERIA */
+
+#galleryMain {
+    display: grid;
+    grid-template-areas: "title title"
+                         "img1 img2"
+                         "img3 img4";
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+.galleryTitle {
+    padding-bottom: 12px;
+    grid-area: title;
+    align-self: center;
+    text-align: center;
+
+    :hover {
+        widows: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        color: black;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+}
+
+.img1 {
+    grid-area: img1;
+}
+  
+.img2 {
+    grid-area: img2;
+}
+  
+.img3 {
+    grid-area: img3;
+}
+  
+.img4 {
+    grid-area: img4;
+}
+
+#img {
+    :hover {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        color: black;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #galleryMain {
+        display: grid;
+        grid-template-areas: "title"
+                             "img1" 
+                             "img2"
+                             "img3" 
+                             "img4";
+        justify-content: center;
+        align-content: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}
+
+.galleryTitle {
+    padding-bottom: 12px;
+    grid-area: title;
+    align-self: center;
+    text-align: center;
+
+    :hover {
+        widows: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        color: black;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+}
+  
+.img1 {
+    grid-area: img1;
+    width: 100%;
+    height: auto;
+  }
+  
+.img2 {
+    grid-area: img2;
+    width: 100%;
+    height: auto;
+}
+  
+.img3 {
+    grid-area: img3;
+    width: 100%;
+    height: auto;
+}
+  
+.img4 {
+    grid-area: img4;
+    width: 100%;
+    height: auto;
+}
+
+#img:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+  /* END GALERIA */
+
+  /* INFORMACIÓN */
+
+@media screen and (max-width: 768px) {
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+  /* END INFORMACIÓN */
+  
+  /* CONTACTO */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgb(163, 163, 163);
+    padding:  8px;  
+    background-color: rgb(223, 223, 223);
+    margin: 0px;
+    width: 256px;
+    height: 250px;
+}
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgb(163, 163, 163);
+    padding:  8px;  
+    background-color: rgb(223, 223, 223);
+    margin: 5px;
+    width: 224px;
+    height: 230px;
+}
+
+@media screen and (max-width: 768px) {
+    #ContactanosImg {
+      width: 100%;
+      height: auto;
+    }
+}
+
+/* END CONTACTO */
+
+/* EVENTOS */
+
+.eventsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-areas: "Tboda TAños TEgresados"
+                         "boda años egresados";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#AnimatedTitle {
+    h2 {
+        position: relative;
+        font-size: 4rem;
+        text-align: center;
+        animation-name: left-in;
+        animation-duration: 1s;
+    }
+}
+
+#boda {
+    grid-area: TBoda;
+}
+  
+#años {
+    grid-area: TAños;
+}
+  
+#egresados {
+    grid-area: TEgresados;
+}
+  
+.bodaImg {
+    grid-area: boda;
+    transition: all 0.5s ease-in;
+    animation-name: shake;
+    animation-duration: 1s;
+}
+  
+.añosImg {
+    grid-area: años;
+    transition: all 0.5s ease-in;
+    animation-name: shake;
+    animation-duration: 1s;
+}
+  
+.egresadosImg {
+    grid-area: egresados;
+    transition: all 0.5s ease-in;
+    animation-name: shake;
+    animation-duration: 1s;
+}
+  
+@media screen and (max-width: 768px) {
+
+.eventsGrid {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: repeat(6, 700px);
+    grid-template-areas:"Tboda"
+                        "boda"
+                        "TAños"
+                        "años"
+                        "TEgresados" 
+                        "egresados";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+#boda {
+    grid-area: TBoda;
+}
+    
+#años {
+    grid-area: TAños;
+}
+    
+#egresados {
+    grid-area: TEgresados;
+}
+    
+.bodaImg {
+    grid-area: boda;
+    
+}
+    
+.añosImg {
+    grid-area: años;
+}
+    
+.egresadosImg {
+    grid-area: egresados;
+}
+}
+  
+  
+/* END EVENTOS */
