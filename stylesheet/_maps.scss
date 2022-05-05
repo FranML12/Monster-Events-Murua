@@ -1,0 +1,19 @@
+/* Color parrafo/Tirulo dento de cajas */
+
+$fonts: (
+    Arial: black,
+    Cambria: aliceblue,
+    Georgia: white
+);
+
+@each $font, $color in $fonts {
+    .font__#{$font} {
+        font-family: #{$font};
+        color: #{$color};
+    }
+}
+
+$estilos: (
+    centro: center,
+    tFuente: 35px
+);
