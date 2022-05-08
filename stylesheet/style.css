@@ -384,6 +384,40 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .box_centrar {
+    display: -ms-grid;
+    display: grid;
+    padding: 30px;
+  }
+  .box_centrar .item {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 300px;
+    margin-bottom: 30px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  div.IndexImage {
+    max-width: 100%;
+    height: 100%;
+  }
+  div.IndexImage img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
 /* End Idex Main */
 /* END HOME */
 /* GALERIA */
