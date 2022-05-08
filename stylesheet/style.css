@@ -377,26 +377,10 @@ body {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .media .media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .media .media .flipped {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .media .media .IndexMainContent {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 10px;
+@media screen and (max-width: 768px) {
+  .media {
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -429,7 +413,8 @@ body {
 }
 
 .galleryTitle :hover {
-  widows: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   color: black;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
@@ -497,7 +482,8 @@ body {
 }
 
 .galleryTitle :hover {
-  widows: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   color: black;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
