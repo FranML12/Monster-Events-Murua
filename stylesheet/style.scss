@@ -211,10 +211,14 @@ h3, h4, h5, h6 {
 }
 
 main {
-    p {
+    p.IndexMainContent {
         margin: 0.5rem 0.5rem;
         color: black;
+        text-align: center;
+        justify-content: center;
     } 
+
+
 }
     
         .box_centrar {
@@ -488,6 +492,12 @@ body {
 /* END CONTACTO */
 
 /* EVENTOS */
+
+.Parrafos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
 .eventsGrid {
     display: grid;

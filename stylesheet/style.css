@@ -280,9 +280,13 @@ h3, h4, h5, h6 {
   color: Black;
 }
 
-main p {
+main p.IndexMainContent {
   margin: 0.5rem 0.5rem;
   color: black;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .box_centrar {
@@ -621,6 +625,16 @@ body {
 
 /* END CONTACTO */
 /* EVENTOS */
+.Parrafos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .eventsGrid {
   display: -ms-grid;
   display: grid;
