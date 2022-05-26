@@ -33,6 +33,10 @@ header {
 
     /* NAV */
 
+    .navbar {
+            z-index: 199999 !important;
+        }
+
     .header__burgerMenu {
         display: flex;
         justify-content: center;
@@ -47,6 +51,7 @@ header {
         border-radius: 5px;
         cursor: pointer;
         transition: box-shadow 0.5s ease-in;
+        z-index: 1000;
 
         :hover {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -55,11 +60,17 @@ header {
 
     input#menu {
         display: none;
+        position: fixed
+        z-index 1000 !important;
 
         :checked ~ .header__menu {
             display: block;
+            position: fixed
+            z-index 100000000 !important; 
         }
     }
+
+
 
     .header__menu {
         display: none;
@@ -102,8 +113,14 @@ header {
 
     @media screen and (min-width: 768px) {
         header {
+            nav {
+                .navbar {
+                    z-index: 199999;
+                }
+            }
             .header__burgerMenu {
                 display: none;
+                z-index: 10000;
             }
 
             .header__menu {
@@ -117,7 +134,17 @@ header {
                 ul {
                     flex-direction: row;
                     justify-content: space-evenly;
+                    z-index: 100000 !important;
                 }
+            }
+
+            .container-fluid {
+                padding-top: 150px !important;
+                }
+            
+
+            #navbarSupportedContent {
+                padding-top: 100px;
             }
 
             #header__menu--ItemGallery {
@@ -275,6 +302,11 @@ body {
     background-color: rgb(231, 231, 231);
 }
 
+.IndexImage {
+    display: flex;
+    padding-left: 30px;
+}
+
 /* Index Main */
 
 .media {
@@ -325,6 +357,11 @@ body {
             height: 100%;
         }
     }
+
+    .IndexImage {
+        display: flex;
+        align-items: center;
+    }
 } 
 
 /* End Idex Main */
@@ -349,13 +386,13 @@ body {
     grid-area: title;
     align-self: center;
     text-align: center;
+}
 
-    :hover {
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-        color: black;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        transform: scale(1.1);
-    }
+.galleryTitle:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 .img1 {
@@ -374,13 +411,11 @@ body {
     grid-area: img4;
 }
 
-#img {
-    :hover {
+#img:hover {
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
         color: black;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         transform: scale(1.1);
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -396,22 +431,22 @@ body {
         padding-top: 15px;
         padding-bottom: 20px;
     }
-}
+
 
 .galleryTitle {
     padding-bottom: 12px;
     grid-area: title;
     align-self: center;
     text-align: center;
-
-    :hover {
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-        color: black;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        transform: scale(1.1);
-    }
 }
   
+.galleryTitle:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    transform: scale(1);
+}
+
 .img1 {
     grid-area: img1;
     width: 100%;
@@ -437,12 +472,12 @@ body {
 }
 
 #img:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
     color: black;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    transform: scale(1);
 }
-
+}
   /* END GALERIA */
 
   /* INFORMACIÓN */
@@ -551,6 +586,10 @@ body {
     transition: all 0.5s ease-in;
     animation-name: shake;
     animation-duration: 1s;
+}
+
+#carouselExampleCaptions {
+    z-index: 5 !important;
 }
   
 @media screen and (max-width: 768px) {

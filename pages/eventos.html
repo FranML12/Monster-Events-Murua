@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <a class="navbar-logo" href="#">
+        <a class="navbar-logo" href="../index.html">
             <img src="../assets/images/MonsterEventsIcon.ico" width="60px" height="60px">
           </a>
           <h1>Monster Events</h1>
@@ -56,7 +56,46 @@
         </nav>
     </header>
     <main>
-      <div id="EventosMain">
+        <!-- CARRUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/images/BodaCarr.jpg" alt="Boda" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 id="boda" class="text-dark">Boda</h4>
+                <p class="text-dark">El amor es intensidad y por esto es una distensión del tiempo: estira los minutos y los alarga como siglos, festeja esta ceremonia tan importante con el mejor salon de fiestas de todo Argentina.</p>
+              </div>
+            </div>
+          <div class="carousel-item">
+              <img src="../assets/images/15añosCarr.jpg" alt="Boda" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h4 id="años">15 años</h4>
+                <p>Dale a tu amada hija la fiesta de su vida, se dice que es la fiesta mas linda de una mujer, por esto creemos que monster events es la mejor opcion, para que ella pueda invitar a todos sus amigos y seres queridos para asi poder pasar la mejor noche de su vida.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/images/EgresadosCarr.jpg" alt="Boda" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 id="egresados" class="text-light">Egresados</h4>
+                  <p>Arma un fiestón entre todos los sextos de tu colegio, con una capacidad de mas de 1000 personas monster events es la mejor opcion, con barra libre, pista de baile, el DJ que conoce todos los temas del momento, etc. Festeja tu egreso del colegio con nosotros.</p>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="EventosMain">
         <br>
         <div id="AnimatedTtile">
         <h2>Eventos</h2>
@@ -67,27 +106,6 @@
           <br>
           Estacionamiento privado, seguridad y cobertura médica, ambientes climatizados, Wifi y generador propio
         </p>
-        <hr>
-          <h3>Eventos:</h3>
-        <!-- Imagenes de eventos -->
-        <div class="eventsGrid" id="carrousel">
-        <section class="eventsBoda" id="slides">
-        <h3 id="boda">Boda</h3>
-        <p>El amor es intensidad y por esto es una distensión del tiempo: estira los minutos y los alarga como siglos, festeja esta ceremonia tan importante con el mejor salon de fiestas de todo Argentina.</p>
-        <img src="../assets/images/Boda.jpg" width="500" height="300" alt="Boda" id="img" class="bodaImg">
-        </section>
-        <section class="events15yo" id="slides">
-        <h3 id="años">15 años</h3>
-        <p>Dale a tu amada hija la fiesta de su vida, se dice que es la fiesta mas linda de una mujer, por esto creemos que monster events es la mejor opcion, para que ella pueda invitar a todos sus amigos y seres queridos para asi poder pasar la mejor noche de su vida.</p>
-        <img src="../assets/images/15años.jpg" width="500" height="300" alt="15 años" id="img" class="añosImg">
-        </section>
-        <section class="eventsEgresados" id="slides">
-        <h3 id="egresados">Egresados</h3>
-        <p>Arma un fiestón entre todos los sextos de tu colegio, con una capacidad de mas de 1000 personas monster events es la mejor opcion, con barra libre, pista de baile, el DJ que conoce todos los temas del momento, etc. Festeja tu egreso del colegio con nosotros.</p>
-        <img src="../assets/images/Egresados.jpg" width="500" height="300" alt="Egresados" id="img" class="egresadosImg">
-        </section>
-        </div>
-      </div>
     </main>
     <footer>
       <h5>Mas información en:</h5>
@@ -102,8 +120,8 @@
               <img src="../assets/images/Top.jpg" alt="Back to top" width="50px" height="50px">
           </a>
       </div>
-      <!-- Bootstrap Scripts -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </footer>
 </body>
 </body>
