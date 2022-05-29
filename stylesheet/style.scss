@@ -182,10 +182,6 @@ body {
         flex: 1;
         padding: 10px;
     }
-
-    @media screen and (max-width: 768px) {
-            display: grid;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +202,11 @@ body {
             align-items: center;
             transition: all 1s ease-in;
 
+        }
+
+        .IndexMainContent {
+            flex: 1;
+            padding: 0px;
         }
     }
 

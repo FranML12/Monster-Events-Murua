@@ -242,13 +242,14 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
+  padding: 0px;
 }
 
 @media screen and (max-width: 768px) {
   .media {
     display: -ms-grid;
     display: grid;
+    padding: 0px;
   }
 }
 
@@ -257,6 +258,12 @@ body {
     display: -ms-grid;
     display: grid;
     padding: 30px;
+  }
+  .IndexImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
   }
   .box_centrar .item {
     width: 100%;
