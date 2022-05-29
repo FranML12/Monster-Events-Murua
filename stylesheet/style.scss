@@ -17,11 +17,6 @@ a {
 
 header {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    height: 80px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: white;
 
     .title {
@@ -31,143 +26,9 @@ header {
         padding-right: 10px ;
     }
 
-    /* NAV */
-
-    .navbar {
-            z-index: 199999 !important;
-        }
-
-    .header__burgerMenu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 2rem;
-        background-color: rgb(39, 39, 39);
-        border: none;
-        color: grey;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        cursor: pointer;
-        transition: box-shadow 0.5s ease-in;
-        z-index: 1000;
-
-        :hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-    }
-
-    input#menu {
-        display: none;
-        position: fixed
-        z-index 1000 !important;
-
-        :checked ~ .header__menu {
-            display: block;
-            position: fixed
-            z-index 100000000 !important; 
-        }
-    }
-
-
-
-    .header__menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%; 
-        height: 100%;
-        background-color: rgb(39, 39, 39);
-
-        .header__closeMenu {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 1.5rem;
-        }
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-
-            li {
-                text-transform: uppercase;
-                font-weight: 600;
-                border-radius: 5px;
-                padding: 0.5rem;
-
-                :hover {
-                    background-color: rgb(68, 68, 68);
-                }
-            }
-        }
-    }
-
-    /* Media queries */
-
-    @media screen and (min-width: 768px) {
-        header {
-            nav {
-                .navbar {
-                    z-index: 199999;
-                }
-            }
-            .header__burgerMenu {
-                display: none;
-                z-index: 10000;
-            }
-
-            .header__menu {
-                display: initial;
-                position: inherit;
-
-                .header__closeMenu {
-                    display: none;
-                }
-
-                ul {
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    z-index: 100000 !important;
-                }
-            }
-
-            .container-fluid {
-                padding-top: 150px !important;
-                }
-            
-
-            #navbarSupportedContent {
-                padding-top: 100px;
-            }
-
-            #header__menu--ItemGallery {
-                position: relative;
-
-                :hover > ul {
-                    display: flex;
-                }
-
-                ul {
-                    display: none;
-                    position: absolute;
-                    left: 0;
-                    padding: 0.5rem;
-                    height: 7rem;
-                    background-color: rgb(250, 250, 250);
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
+#navbarScroll {
+    padding-right: 70px !important;
 }
-
 /* END HEADER */
 
 /* FOOTER */
@@ -634,6 +495,5 @@ body {
     grid-area: egresados;
 }
 }
-  
   
 /* END EVENTOS */
